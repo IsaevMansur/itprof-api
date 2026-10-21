@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: itprof
+  datasource:
+    url: jdbc:postgresql://localhost:5432/itprof
+    username: itprof
+    password: itprof
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: itprof
+  flyway:
+    user: itprof
+    password: itprof
+    schemas: itprof
+    default-schema: itprof
+    create-schemas: true
